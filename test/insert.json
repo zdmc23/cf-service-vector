@@ -1,0 +1,5 @@
+[
+  { "id": "90001", "values": [9.23, 9.11, 9.43], "metadata": { "collection": "collection1" } },
+  { "id": "90002", "values": [9.43, 9.71, 9.13], "metadata": { "collection": "collection2" } },
+  { "id": "90003", "values": [9.24, 9.12, 9.44], "metadata": { "collection": "collection1" } }
+]
