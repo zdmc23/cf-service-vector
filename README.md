@@ -74,9 +74,16 @@ npx wrangler deploy --env production
 
 ## Configure (for use with Cloudflare Pages Functions)
 
+### Local
+
+https://developers.cloudflare.com/pages/functions/bindings/#interact-with-your-service-bindings-locally
 ```bash
 npx wrangler pages dev <OUTPUT_DIR> --service CF_SERVICE_VECTOR=cf-service-vector
 ```
+
+### Remote
+
+https://developers.cloudflare.com/pages/functions/bindings/#service-bindings
 
 ## Use (in Cloudflare Pages Functions code)
 
@@ -87,8 +94,8 @@ const res = await env.CF_SERVICE_VECTOR.fetch("https://mydomain.com/query, {
     "Content-Type": "application/json"
   },
   body: JSON.stringify({
-    "values": [0.27, 0.19, 0.48],
-    "topK": 2
+    values: [0.27, 0.19, 0.48],
+    topK: 2
   })
 });
 ```
